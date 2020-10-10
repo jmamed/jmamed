@@ -1,0 +1,18 @@
+.footer{
+  div.footer-content{
+    .cta-info{
+      font-size: 12px
+    }
+    .footer-links-container{// groups and organizes links
+      display: flex;
+
+      .footer-link{//individual links
+        position: relative;
+        color: #919191;
+        text-align: center;
+        transition: .3s ease;
+        overflow: hidden;
+      }
+    }
+  }
+}
