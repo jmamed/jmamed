@@ -43,4 +43,4 @@ ng build --watch
 lite-server --baseDir="dist/jmamed"
 
 ## Deploy project to github pages
-ng deploy --base-href
+ng deploy --base-href or ng deploy
