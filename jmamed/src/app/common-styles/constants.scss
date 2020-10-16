@@ -1,0 +1,40 @@
+// ============
+// Constants file
+// Used for reused variables and standardized elements
+// ============
+
+//greyscale
+$black: #000000;
+$black_90: #1A1A1A;
+$black_50: #808080;
+$black_10: #E6E6E6;
+$black_05: #F2F2F2;
+$white: #FFFFFF;
+
+//alerts
+$feedback_color_alert: #c32114; //redish
+
+
+span.separator{
+  display: block;
+  background: inherit;
+  padding: 10px 0 0 0;
+  border: none;
+  margin: 9px 0 0 0;
+  // background-color: yellow;
+}
+
+// ============
+// Responsive Breakpoints
+// If needed
+// ============
+
+// $break_extra_large_min: 1200px;
+// $break_large_max: 1199.98px
+//1014px large min
+//1013.98px
+//769 medium min
+//768.98 max small
+//481px min
+//480.98px max min
+//320 min
