@@ -44,3 +44,6 @@ lite-server --baseDir="dist/jmamed"
 
 ## Deploy project to github pages
 ng deploy --base-href or ng deploy
+
+## Resources
+https://blog.bitsrc.io/deploy-your-angular-project-to-github-pages-7cbacb96f35b
