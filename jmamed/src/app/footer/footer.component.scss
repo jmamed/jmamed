@@ -1,17 +1,25 @@
 .footer{
+  color: #ffffff;
+  background-color: grey;
+  display: block;
+  text-align: center;
   div.footer-content{
     .cta-info{
       font-size: 12px
     }
     .footer-links-container{// groups and organizes links
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
 
       .footer-link{//individual links
         position: relative;
-        color: #919191;
         text-align: center;
         transition: .3s ease;
         overflow: hidden;
+        padding: 8px 16px;
+
       }
     }
   }

@@ -1,0 +1,21 @@
+div.header{
+  display: block;
+  background-color: #808080;
+  width: 100%;
+  text-align: center;
+  div.overview{
+    h1{
+      color: #ffffff;
+    }
+  }
+  div.nav-container{
+    display: inline-block;
+    width: auto;
+    a.nav-links{
+      font-size: 18px;
+      color: #ffffff;
+      padding: 8px 16px;
+
+    }
+  }
+}

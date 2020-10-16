@@ -1,0 +1,57 @@
+section.resume{
+  // display: flex;
+  // width: 100%;
+  div.container{
+    div.title{
+      width: auto;
+      padding: 0 16px;
+    }
+    div.profile{
+      width: auto;
+      padding: 0 16px;
+    }
+    div.experience{
+      width: auto;
+      padding: 0 16px;
+      div.current-job{
+        display: inline-block;
+        .present{
+          color: #ffffff;
+          background-color: #009688;
+          border-radius: 4px;
+          display: inline-block;
+          padding-left: 8px;
+          padding-right: 8px;
+          text-align: center;
+        }
+      }
+      div.past-jobs{
+        display: block;
+      }
+      div.description{
+        p{
+          font-size: 14px;
+        }
+        ul{
+          li{
+            // font-size: 14px;
+          }
+        }
+      }
+    }
+    div.projects{
+      width: auto;
+      padding: 0 16px;
+    }
+    div.education{
+      width: auto;
+      padding: 0 16px;
+      padding-bottom: 20px;
+
+      div.school-title{
+        font-weight: bold;
+      }
+    }
+  }
+
+}

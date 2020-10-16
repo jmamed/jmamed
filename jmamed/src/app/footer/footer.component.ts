@@ -13,9 +13,10 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.twitterURL = "";
-    this.linkedInURL = "";
-    this.githubURL = "";
+    this.twitterURL = "https://twitter.com/jasonmamed";
+    this.linkedInURL = "https://www.linkedin.com/in/jasonmamed";
+    this.githubURL = "https://github.com/jmamed";
+    // console.log(this.twitterURL);
   }
   scrollTop(){
     
