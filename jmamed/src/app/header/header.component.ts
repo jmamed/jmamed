@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'header',
@@ -11,5 +13,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  faReact = faReact;
 
 }
