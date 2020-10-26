@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { faDog, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'app-footer',
@@ -21,5 +24,12 @@ export class FooterComponent implements OnInit {
   scrollTop(){
     
   }
+
+  //Free icons from: fort-awesome
+  faDog = faDog;
+  faTwitter = faTwitter;
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
+  faPaperPlane = faPaperPlane;
 
 }

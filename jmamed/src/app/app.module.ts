@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FeaturesComponent } from './features/features.component';
+import { SecretComponent } from './secret/secret.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { FeaturesComponent } from './features/features.component';
     HeaderComponent,
     FooterComponent,
     ResumeComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    SecretComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [
     Title

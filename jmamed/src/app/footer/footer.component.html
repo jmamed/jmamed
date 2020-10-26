@@ -4,10 +4,22 @@
 
     </div>
     <div class="footer-links-container">
-      <a class="footer-link" href="https://twitter.com/jasonmamed" id="twitter" target="_blank" [innerHTML]="'Twitter'"></a>
-      <a class="footer-link" href="https://www.linkedin.com/in/jasonmamed" id="linkedIn" target="_blank" [innerHTML]="'LinkedIn'"></a>
-      <a class="footer-link" href="https://github.com/jmamed" id="github" target="_blank" [innerHTML]="'GitHub'"></a>
-      <a class="footer-link" href="mailto:mamed.jason@gmail.com">Email Me</a>
+      <a class="footer-link" href="https://twitter.com/jasonmamed" id="twitter" target="_blank">
+        <fa-icon [icon]="faTwitter"></fa-icon>
+      </a>
+      <a class="footer-link" href="https://www.linkedin.com/in/jasonmamed" id="linkedIn"
+        target="_blank">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a class="footer-link" href="https://github.com/jmamed" id="github" target="_blank">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+      <a class="footer-link" href="#" id="secret" routerLink="/secret" routerLinkActive="active">
+        <fa-icon [icon]="faDog"></fa-icon>
+      </a>
+      <a class="footer-link email" href="mailto:mamed.jason@gmail.com">Email Me
+        <fa-icon [icon]="faPaperPlane"></fa-icon>
+      </a>
     </div>
     <div class="widgets">
       <span id="twitter-widget"></span>

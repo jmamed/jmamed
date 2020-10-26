@@ -4,10 +4,7 @@
   display: block;
   text-align: center;
   div.footer-content{
-    // .cta-info{
-    //   font-size: 12px
-    // }
-    .footer-links-container{// groups and organizes links
+    .footer-links-container{
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -19,6 +16,10 @@
         transition: .3s ease;
         overflow: hidden;
         padding: 8px 16px;
+
+        &.email{
+          text-decoration: none;
+        }
 
       }
     }

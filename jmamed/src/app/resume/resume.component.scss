@@ -10,31 +10,37 @@ section.resume{
       width: auto;
       padding: 0 16px;
     }
-    div.experience{
+    div.experience {
       width: auto;
       padding: 0 16px;
-      div.current-job{
-        display: inline-block;
-        .present{
-          color: #ffffff;
-          background-color: #009688;
-          border-radius: 4px;
+      div {
+        &.current-job {
           display: inline-block;
-          padding-left: 8px;
-          padding-right: 8px;
-          text-align: center;
+
+          .present {
+            color: #ffffff;
+            background-color: #009688;
+            border-radius: 4px;
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+          }
         }
-      }
-      div.past-jobs{
-        display: block;
-      }
-      div.description{
-        p{
-          font-size: 14px;
+
+        &.past-jobs {
+          display: block;
         }
-        ul{
-          li{
-            // font-size: 14px;
+
+        div.description {
+          p {
+            font-size: 14px;
+          }
+
+          ul {
+            li {
+              // font-size: 14px;
+            }
           }
         }
       }
