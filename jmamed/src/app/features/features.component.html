@@ -1,3 +1,37 @@
 <section>
-  
+  <h1 class="title">Features</h1>
+  <p>Below is a list of features I have experience working on</p>
+  <div class="geoContainer">
+    <h2>Geolocation</h2>
+    <div>
+      <p>The Geolocation API allows the user to provide their location to web applications if they so desire.</p>
+      <p>Using a service, the geolocation is gathered, and based ont the users device, the data will be shown to the user using interpolation</p>
+      <p>This implementation is, on user consent, the geolocation will display the current geolocation after pressing the "show my location" button below</p>
+    </div>
+    <div>
+      <button (click)="showgeolocation()">Show my location</button>
+    </div>
+    <span class="separator"></span>
+    <div id="geo-area" class="geoArea">
+      <div class="geoData" id="geo-data" *ngIf="showArea && !errorArea">
+        <ul>
+          <li class="geodata">Your Latitude: {{ latitude }} </li>
+          <li class="geodata">Your Longitude: {{ longitude }} </li>
+          <li class="geodata">Your Accuracy: {{ accuracy }} </li>
+          <!-- below logic only appears for mobile -->
+          <li class="mobile geodata">Your Altitude: {{ altitude }} </li>
+          <li class="mobile geodata">Your Altitude Accuracy: {{ altitudeAccuracy }} </li>
+          <li class="mobile geodata">Your Heading: {{ heading }} </li>
+          <li class="mobile geodata">Your Speed: {{ speed }} </li>
+
+        </ul>
+      </div>
+      <div class="geoData" id="geo-data" *ngIf="!showArea && !errorArea">
+        <h2>Please allow location in browser for feature Demo and click the button above</h2>
+      </div>
+      <div class="geoData" id="geo-data" *ngIf="errorArea">
+        <h2>There is an error with this function</h2>
+      </div>
+    </div>
+  </div>
 </section>

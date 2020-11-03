@@ -1,0 +1,28 @@
+.geoContainer{
+  padding: 2%;
+}
+
+.geo-area{
+  padding: 2%;
+  margin: 1px 1px;
+}
+
+.geoData{
+  background-color: tan;
+  padding: 2%;
+}
+
+.title{
+  text-align: center;
+  padding: 1%;
+}
+
+.mobile{
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+.geodata{
+  list-style-type: square;//or none
+}
