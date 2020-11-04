@@ -22,6 +22,10 @@ span.separator{
   border: none;
   margin: 9px 0 0 0;
   // background-color: yellow;
+
+  &.large{
+    padding: 20px 0 0 0;
+  }
 }
 
 // ============

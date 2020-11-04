@@ -10,6 +10,21 @@ import { FeaturesComponent } from './features/features.component';
 import { SecretComponent } from './secret/secret.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+/ * Custom Hammer configuration * /
+import {HammerGestureConfig, HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
+import * as Hammer from 'hammerjs';
+import { HttpClientModule} from '@angular/common/http';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+
+export class CustomHammerConfig extends HammerGestureConfig {
+  overrides = {
+    'bread': {
+      direction: Hammer.DIRECTION_ALL,
+    }
+  }
+}
+/ * End Custom hammer configuration * /
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,10 +37,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    NgxGalleryModule 
   ],
   providers: [
-    Title
+    Title,
+    {provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig}
   ],
   bootstrap: [AppComponent]
 })
