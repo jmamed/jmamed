@@ -1,32 +1,105 @@
-.container{
+.container {
   padding: 1%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-.geoContainer{
+.geoContainer {
   padding: 2%;
 }
 
-.geo-area{
+.geo-area {
   padding: 2%;
   margin: 1px 1px;
 }
 
-.geoData{
+.geoData {
   background-color: tan;
   padding: 2%;
 }
 
-.title{
+.title {
   text-align: center;
-  padding: 1%;
+  // padding: 1%;
 }
 
-.mobile{
+.mobile {
   @media (min-width: 700px) {
     display: none;
   }
 }
 
-.geodata{
-  list-style-type: square;//or none
+.geodata {
+  list-style-type: square; //or none
+}
+
+//Progress bar//
+
+.progress-ring-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .progressContent {
+    flex-grow: 1;
+  }
+
+  .progressActionArea {
+    padding: 2%;
+    border: 1px solid black;
+
+      .progress-ring {
+        //svg
+        .progress-ring__circle {
+          //draw circle
+          width: auto;
+          transition: 0.35s stroke-dashoffset;
+          // axis compensation
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+        }
+      }
+  }
+
+  .button-box-container {
+    width: auto;
+    padding: 2%;
+
+    // left: 1;
+    .button-box {
+      text-align: center;
+      display: flex;
+      align-items: flex-start;
+
+      button {
+        padding: 10px;
+
+        
+      }
+      button:first-of-type{
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // .progressInput {
+  //   position: relative;
+  //   top: 10px;
+  //   left: 10px;
+  //   width: 80px;
+  // }
+}
+
+.alert{
+  background-color: red;
+  border: 2px solid black;
 }

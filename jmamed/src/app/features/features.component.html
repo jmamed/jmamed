@@ -1,12 +1,14 @@
 <section>
-  <h1 class="title">Features</h1>
-  <p style="padding: 2%">Below is a list of features I have experience working on</p>
-  <div class="geoContainer">
+  <h1 class="title" style="font-size: 50px;">Features</h1>
+  <!-- <p style="padding: 2%">Below is a list of features I have experience working on</p> -->
+  <div class="geoContainer container">
     <h2>Geolocation</h2>
     <div>
       <p>The Geolocation API allows the user to provide their location to web applications if they so desire.</p>
-      <p>Using a service, the geolocation is gathered, and based ont the users device, the data will be shown to the user using interpolation</p>
-      <p>This implementation is, on user consent, the geolocation will display the current geolocation after pressing the "show my location" button below</p>
+      <p>Using a service, the geolocation is gathered, and based ont the users device, the data will be shown to the
+        user using interpolation</p>
+      <p>This implementation is, on user consent, the geolocation will display the current geolocation after pressing
+        the "show my location" button below</p>
     </div>
     <div>
       <button (click)="showgeolocation()">Show my location</button>
@@ -34,8 +36,35 @@
       </div>
     </div>
   </div>
+  <!-- <span class="separator large"></span> -->
+  <!-- <div id="carousel" class="carousel-container container"></div> -->
   <span class="separator large"></span>
-  <div id="carousel" class="carousel">
+  <div id="progressRing" class="container progress-ring-container">
+    <div class="progressContent">
+      <h2>Progress Ring</h2>
+      <p>Using an SVG, Create a progress bar that increments on click of a button</p>
+      <p *ngIf="circleDone" class="alert">Button can no longer be pressed, click "Reset"</p>
+
+    </div>
+    <div style="padding: 2%;">
+      <h2>{{this.current}} of {{this.max}}</h2>
+    </div>
+    <div class="progressActionArea">
+      <svg class="progress-ring" width="120" height="120">
+        <circle class="progress-ring__circle" stroke="blue" stroke-width="8" fill="transparent" r="52" cx="60"
+          cy="60" />
+      </svg>
+
+      
+    </div>
+    <div class="button-box-container">
+      <div class="button-box">
+        <button (click)="onClick()" class="progressButton" id="progressButton">Count Up</button>
+        <span class="separator small"></span>
+        <button (click)="onReset()" class="resetButton" id="resetButton">Reset</button>
+      </div>
+    </div>
 
   </div>
+  <span class="separator large"></span>
 </section>
