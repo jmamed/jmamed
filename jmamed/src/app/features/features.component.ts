@@ -110,14 +110,14 @@ export class FeaturesComponent implements OnInit {
     }
   }
   disabledBtn(){
-    document.getElementById('progressButton').disabled = true;
+    (document.getElementById('progressButton') as HTMLInputElement).disabled = true;
     // alert("Circle is complete"); //annoying alert message
   }
 
   onReset(){
     this.current = 0;
     this.circleDone = false;
-    document.getElementById('progressButton').disabled = false;
+    (document.getElementById('progressButton') as HTMLInputElement).disabled = false;
     this.setProgress(0);
   }
 
