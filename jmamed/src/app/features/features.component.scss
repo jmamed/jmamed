@@ -66,6 +66,7 @@
           // axis compensation
           transform: rotate(-90deg);
           transform-origin: 50% 50%;
+          stroke: linear-gradient(45deg, blue 0 50%, blue 50% 100%);
         }
       }
   }
